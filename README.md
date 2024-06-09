@@ -1,4 +1,4 @@
-# SeqSero2s 1.0.0
+# SeqSero2s 1.0.1
 Salmonella serotype prediction from genome sequencing data.
 
 Online version: http://www.denglab.info/SeqSero2
@@ -14,23 +14,16 @@ SeqSero2s has three workflows:
 Allele micro-assembly workflow depends on:
 
 1. Python 3;
-
 2. Biopython 1.73;
-
 3. [Burrows-Wheeler Aligner v0.7.12](http://sourceforge.net/projects/bio-bwa/files/);
-
 4. [Samtools v1.8](http://sourceforge.net/projects/samtools/files/samtools/);
-
 5. [NCBI BLAST v2.2.28+](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download);
-
 6. [SRA Toolkit v2.8.0](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=software&m=software&s=software);
-
 7. [SPAdes v3.9.0](http://bioinf.spbau.ru/spades);
-
 8. [Bedtools v2.17.0](http://bedtools.readthedocs.io/en/latest/);
-
-9. [SalmID v0.11](https://github.com/hcdenbakker/SalmID).
-
+9. [SalmID v0.11](https://github.com/hcdenbakker/SalmID);
+10. [mlst v2.22.1](https://github.com/tseemann/mlst);
+11. [stringMLST v0.6.3](https://github.com/jordanlab/stringMLST);
 
 (B) Raw reads k-mer. This workflow takes raw reads as input and performs rapid serotype prediction based on unique k-mers of serotype determinants. 
 
@@ -44,25 +37,26 @@ Raw reads k-mer workflow (originally SeqSeroK) depends on:
 
 # Installation
 ### Conda
-To install the latest SeqSero2 Conda package (recommended):  
 ```
-conda install -c bioconda seqsero2=1.3.1
 ```
 ### Git
+Install mlst and stringMLST first
+```
+git clone https://github.com/tseemann/mlst.git
+$HOME/mlst/bin/mlst --help
+```
+```
+pip install stringMLST
+```
 To install the SeqSero2s git repository locally:
 ```
 git clone https://github.com/LSTUGA/SeqSero2s.git
 cd SeqSero2s
 python3 -m pip install --user .
 ```
-### Other options
-Third party SeqSero2 installations (may not be the latest version of SeqSero2): \
-https://github.com/B-UMMI/docker-images/tree/master/seqsero2 \
-https://github.com/denglab/SeqSero2/issues/13
-
 
 # Executing the code 
-Make sure all SeqSero2s and its dependency executables are added to your path (e.g. to ~/.bashrc). Then type SeqSero2.py to get detailed instructions.
+Make sure all SeqSero2s and its dependency executables are added to your path (e.g. to ~/.bashrc). Then type SeqSero2s.py to get detailed instructions.
 
     Usage: SeqSero2s.py 
 
