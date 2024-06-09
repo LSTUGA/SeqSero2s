@@ -22,8 +22,7 @@ Allele micro-assembly workflow depends on:
 7. [SPAdes v3.9.0](http://bioinf.spbau.ru/spades);
 8. [Bedtools v2.17.0](http://bedtools.readthedocs.io/en/latest/);
 9. [SalmID v0.11](https://github.com/hcdenbakker/SalmID);
-10. [mlst v2.22.1](https://github.com/tseemann/mlst);
-11. [stringMLST v0.6.3](https://github.com/jordanlab/stringMLST);
+10. [stringMLST v0.6.3](https://github.com/jordanlab/stringMLST);
 
 (B) Raw reads k-mer. This workflow takes raw reads as input and performs rapid serotype prediction based on unique k-mers of serotype determinants. 
 
@@ -31,6 +30,7 @@ Raw reads k-mer workflow (originally SeqSeroK) depends on:
 
 1. Python 3;
 2. [SRA Toolkit](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=software&m=software&s=software) (optional, just used to fastq-dump sra files);
+3. [mlst v2.22.1](https://github.com/tseemann/mlst).
 
 
 (C) Genome assembly k-mer. This workflow takes genome assemblies as input and the rest of the workflow largely overlaps with the raw reads k-mer workflow
