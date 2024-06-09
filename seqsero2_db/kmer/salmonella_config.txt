@@ -1,0 +1,10 @@
+[loci]
+aroC	kmer/salmonella_aroC.tfa
+dnaN	kmer/salmonella_dnaN.tfa
+hemD	kmer/salmonella_hemD.tfa
+hisD	kmer/salmonella_hisD.tfa
+purE	kmer/salmonella_purE.tfa
+sucA	kmer/salmonella_sucA.tfa
+thrA	kmer/salmonella_thrA.tfa
+[profile]
+profile	kmer/salmonella_profile.txt

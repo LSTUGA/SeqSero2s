@@ -1,0 +1,24 @@
+06/26/2023 09:03:06 AM singleSampleTool : GDUTNS--Y1.R1.raw.fastq.gz and GDUTNS--Y1.R2.raw.fastq.gz
+06/26/2023 09:03:06 AM singleSampleTool : paired True
+06/26/2023 09:03:06 AM singleSampleTool : fastq1 start
+06/26/2023 09:03:06 AM singleFileTool :GDUTNS--Y1.R1.raw.fastq.gz
+06/26/2023 09:03:06 AM singleFileTool : fastq
+06/26/2023 09:03:06 AM fileExplorer :GDUTNS--Y1.R1.raw.fastq.gz
+06/26/2023 09:03:54 AM singleSampleTool : fastq1 done
+06/26/2023 09:03:54 AM singleSampleTool : fastq2 start
+06/26/2023 09:03:54 AM singleFileTool :GDUTNS--Y1.R2.raw.fastq.gz
+06/26/2023 09:03:54 AM singleFileTool : fastq
+06/26/2023 09:03:54 AM fileExplorer :GDUTNS--Y1.R2.raw.fastq.gz
+06/26/2023 09:04:48 AM singleSampleTool : fastq2 done
+06/26/2023 09:04:48 AM singleSampleTool : weightedProfile start
+06/26/2023 09:04:48 AM weightedProf
+06/26/2023 09:04:48 AM singleSampleTool : weightedProfile finished
+06/26/2023 09:04:48 AM singleSampleTool : getMaxCount start
+06/26/2023 09:04:48 AM getMaxCount
+06/26/2023 09:04:48 AM Max Support :GDUTNS--Y : {'purE': {'5': 54640}, 'dnaN': {'8': 75064}, 'thrA': {'15': 80816}, 'sucA': {'11': 61141}, 'hemD': {'11': 72516}, 'aroC': {'8': 77112}, 'hisD': {'11': 51911}}
+06/26/2023 09:04:48 AM Second Max Support :GDUTNS--Y : {'purE': {'4': 48207, '456': 48207}, 'dnaN': {'1': 58680, '492': 58680}, 'thrA': {'10': 63003}, 'sucA': {'9': 58437, '46': 58437, '109': 58437, '197': 58437, '413': 58437, '570': 58437, '925': 58437, '1060': 58437}, 'hemD': {'3': 65987}, 'aroC': {'7': 67451}, 'hisD': {'1': 40164, '353': 40164}}
+06/26/2023 09:04:48 AM singleSampleTool : getMaxCount end
+06/26/2023 09:04:48 AM singleSampleTool : findST start
+06/26/2023 09:04:48 AM findST
+06/26/2023 09:04:48 AM singleSampleTool : findST end
+06/26/2023 09:04:48 AM Command :['/home/shaoting/.conda/envs/seqsero2s/bin/stringMLST.py', '--predict', '-P', 'kmer/salmonella', '-1', 'GDUTNS--Y1.R1.raw.fastq.gz', '-2', 'GDUTNS--Y1.R2.raw.fastq.gz', '-o', 'GDUTNS--Y1_stringMLST.txt']
