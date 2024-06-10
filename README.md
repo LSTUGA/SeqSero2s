@@ -85,8 +85,7 @@ Raw reads k-mer workflow (originally SeqSeroK) depends on:
 ### Git
 Install mlst and stringMLST first
 ```
-git clone https://github.com/tseemann/mlst.git
-$HOME/mlst/bin/mlst --help
+conda install mlst
 ```
 ```
 pip install stringMLST
