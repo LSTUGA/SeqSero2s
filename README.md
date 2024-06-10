@@ -44,6 +44,7 @@ Online version: http://www.denglab.info/SeqSero2
 -fljB_1,2_from-Brazzaville_SRR2058145_1__1521
 -fljB_1,2_Salmonella.enterica_1,4,5,12:i:1,2,7_AY353272_1__1521
 ```
+8. Run MLST analysis using stringMLST/mlst
 
 # Introduction 
 SeqSero2s is a pipeline for Salmonella serotype prediction from raw sequencing reads or genome assemblies
