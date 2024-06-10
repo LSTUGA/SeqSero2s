@@ -3,7 +3,7 @@ Salmonella serotype prediction from genome sequencing data.
 
 Online version: http://www.denglab.info/SeqSero2
 
-# updates since SS2 v1.2.1
+# Updates since SS2 v1.2.1
 1. Convert the sequences of the following alleles to their reverse complement sequences in the SeqSero2 database.
 ```
 -fliC_b_Wien_CDC_b,d,j__1488\
@@ -29,7 +29,7 @@ Online version: http://www.denglab.info/SeqSero2
 -fliC_1,5,7_Salmonella.enterica_from-cdc-Stk1778_1,5,7_1521
 -fliC_1,2,7_Salmonella.enterica_from-cdc-Stk2293_1,2,7_1521
 ```
-3. delete the O54 allele
+3. Delete the O54 allele
 ```
 -O-54_wbbF__1380
 ```
