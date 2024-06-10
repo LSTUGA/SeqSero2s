@@ -5,8 +5,8 @@ Online version: http://www.denglab.info/SeqSero2
 
 # updates since SS2 v1.2.1
 1. Convert the sequences of the following alleles to their reverse complement sequences in the SeqSero2 database.
-	-fliC_b_Wien_CDC_b,d,j__1488
-	-fliC_d_from-II-48:d:z6_SRR1168371__1521
+-fliC_b_Wien_CDC_b,d,j__1488\
+-fliC_d_from-II-48:d:z6_SRR1168371__1521\
 -fliC_a_Salmonella.enterica_from-cdc-Stk2184_other.a__1488
 -fliC_l,v_from-Nchanga_SRR1153349__1503
 -fliC_l,z13,z28_Salmonella.enterica_from-CDC_2011K-0215_l,v__1506
