@@ -16,24 +16,34 @@ Online version: http://www.denglab.info/SeqSero2
 -fljB_1,5_from-Infantis-micro-assembly_SRR1106258_1__1521
 -fljB_z6_from-II-48:d:z6_SRR1168371__1503
 ```
-3. Delete the following alleles from the SeqSero2 database because of the existence of mutations.
+2. Delete the following alleles from the SeqSero2 database because of the existence of mutations.
+```
 -fliC_y_Bareillystr_AOZP01000027_other.y__1508
 -fliC_d_Muenchenstr_ARYW01000085_b,d,j__1496
 -fliC_d_Muenchenstr_ARYX01000110_b,d,j__1488
 -fliC_g,m_Enteritidisstr_ALHD01000038_g,m__1507
 -fljB_1,2_Newportstr_AYDZ01000021_1__1510
-4. Add a fliC 1,5,7 allele and a fliC 1,2,7 allele into the SeqSero2 database.
+```
+2. Add a fliC 1,5,7 allele and a fliC 1,2,7 allele into the SeqSero2 database.
+```
 -fliC_1,5,7_Salmonella.enterica_from-cdc-Stk1778_1,5,7_1521
 -fliC_1,2,7_Salmonella.enterica_from-cdc-Stk2293_1,2,7_1521
-5. delete the O54 allele
+```
+3. delete the O54 allele
+```
 -O-54_wbbF__1380
-6. Fixed the bug that caused the misidentification of O9 and O2 by the micro-assembly workflow
-7. Update serotype names based on the simplified KWS scheme
-8. Remove the 9,46,27 allele
+```
+4. Fixed the bug that caused the misidentification of O9 and O2 by the micro-assembly workflow
+5. Update serotype names based on the simplified KWS scheme
+6. Remove the 9,46,27 allele
+```
 -O-9,46,27_partial_wzy__1019
-9. Remove two fljB_1,2 allels
+```
+7. Remove two fljB_1,2 allels
+```
 -fljB_1,2_from-Brazzaville_SRR2058145_1__1521
 -fljB_1,2_Salmonella.enterica_1,4,5,12:i:1,2,7_AY353272_1__1521
+···
 
 # Introduction 
 SeqSero2s is a pipeline for Salmonella serotype prediction from raw sequencing reads or genome assemblies
