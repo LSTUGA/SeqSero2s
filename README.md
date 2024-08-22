@@ -1,4 +1,4 @@
-# SeqSero2s 1.1.0
+# SeqSero2s 1.1.1
 
 Salmonella serotype prediction from genome sequencing data.
 
