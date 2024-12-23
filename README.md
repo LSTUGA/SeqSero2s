@@ -1,8 +1,8 @@
-# SeqSero2s 1.1.1
+# SeqSero2S 1.1.2
 
 Salmonella serotype prediction from genome sequencing data.
 
-Online version: http://www.denglab.info/SeqSero2
+Online version: http://www.denglab.info/SeqSero2S
 
 # Updates since SS2 v1.2.1
 1. Convert the sequences of the following alleles to their reverse complement sequences in the SeqSero2 database.
@@ -99,9 +99,9 @@ python3 -m pip install --user .
 ```
 
 # Executing the code 
-Make sure all SeqSero2s and its dependency executables are added to your path (e.g. to ~/.bashrc). Then type SeqSero2s.py to get detailed instructions.
+Make sure all SeqSero2S and its dependency executables are added to your path (e.g. to ~/.bashrc). Then type SeqSero2S.py to get detailed instructions.
 
-    Usage: SeqSero2s.py 
+    Usage: SeqSero2S.py 
 
     -m <string> (which workflow to apply, 'a'(raw reads allele micro-assembly), 'k'(raw reads and genome assembly k-mer), default=a)
 
@@ -130,15 +130,15 @@ Make sure all SeqSero2s and its dependency executables are added to your path (e
 Allele mode:
 
     # Allele workflow ("-m a", default), for separated paired-end raw reads ("-t 2"), use 10 threads in mapping and assembly ("-p 10")
-    SeqSero2s.py -p 10 -t 2 -i R1.fastq.gz R2.fastq.gz
+    SeqSero2S.py -p 10 -t 2 -i R1.fastq.gz R2.fastq.gz
 	
 K-mer mode:
 
     # Raw reads k-mer ("-m k"), for separated paired-end raw reads ("-t 2")
-    SeqSero2s.py -m k -t 2 -i R1.fastq.gz R2.fastq.gz
+    SeqSero2S.py -m k -t 2 -i R1.fastq.gz R2.fastq.gz
 
     # Genome assembly k-mer ("-t 4", genome assemblies only predicted by the k-mer workflow, "-m k")
-    SeqSero2s.py -m k -t 4 -i assembly.fasta
+    SeqSero2S.py -m k -t 4 -i assembly.fasta
 	
 # Output 
 Upon executing the command, a directory named 'SeqSero_result_Time_your_run' will be created. Your result will be stored in 'SeqSero_result.txt' in that directory. And the assembled alleles can also be found in the directory if using "-m a" (allele mode).
