@@ -48,10 +48,10 @@ Online version: http://www.denglab.info/SeqSero2S
 8. Run 7-gene MLST analysis using stringMLST/mlst
 
 # Introduction 
-SeqSero2s is a pipeline for Salmonella serotype prediction from raw sequencing reads or genome assemblies
+SeqSero2S is a pipeline for Salmonella serotype prediction from raw sequencing reads or genome assemblies
 
 # Dependencies 
-SeqSero2s has three workflows:
+SeqSero2S has three workflows:
 
 (A) Allele micro-assembly (default). This workflow takes raw reads as input and performs targeted assembly of serotype determinant alleles. Assembled alleles are used to predict serotype and flag potential inter-serotype contamination in sequencing data (i.e., presence of reads from multiple serotypes due to, for example, cross or carryover contamination during sequencing). 
 
@@ -91,10 +91,10 @@ conda install mlst
 ```
 pip install stringMLST
 ```
-To install the SeqSero2s git repository locally:
+To install the SeqSero2S git repository locally:
 ```
-git clone https://github.com/LSTUGA/SeqSero2s.git
-cd SeqSero2s
+git clone https://github.com/LSTUGA/SeqSero2S.git
+cd SeqSero2S
 python3 -m pip install --user .
 ```
 
@@ -115,11 +115,11 @@ Make sure all SeqSero2S and its dependency executables are added to your path (e
  
     -d <string> (output directory name, if not set, the output directory would be 'SeqSero_result_'+time stamp+one random number)
 	
-    -c <flag> (if '-c' was flagged, SeqSero2 will only output serotype prediction without the directory containing log files)
+    -c <flag> (if '-c' was flagged, SeqSero2S will only output serotype prediction without the directory containing log files)
     
     -n <string> (optional, to specify a sample name in the report output)
     
-    -s <flag> (if '-s' was flagged, SeqSero2 will not output header in SeqSero_result.tsv)
+    -s <flag> (if '-s' was flagged, SeqSero2S will not output header in SeqSero_result.tsv)
 		    
     --check <flag> (use '--check' flag to check the required dependencies)
     
