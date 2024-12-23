@@ -2,7 +2,7 @@
 
 Salmonella serotype prediction from genome sequencing data.
 
-Online version: http://www.denglab.info/SeqSero2S
+Online version: http://www.denglab.info/SeqSero2
 
 # Updates since SS2 v1.2.1
 1. Convert the sequences of the following alleles to their reverse complement sequences in the SeqSero2 database.
