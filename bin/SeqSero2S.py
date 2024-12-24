@@ -15,7 +15,7 @@ from distutils.version import LooseVersion
 from distutils.spawn import find_executable
 sys.path.insert(1,sys.path[0]+'/..')
 
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 ### SeqSero Kmer
 def parse_args():
@@ -501,8 +501,8 @@ def seqsero_from_formula_to_serotypes(Otype, fliC, fljB, special_gene_list,subsp
       f = open(ex_dir + '/special.pickle', 'rb')
       special = pickle.load(f)
       O22_O23=special['O22_O23']
-      #if predict_sero.split(" or ")[0] in O22_O23[-1] and predict_sero.split(" or ")[0] not in rename_dict_all:#if in rename_dict_all, then it means already merged, no need to analyze 
-      if predict_sero.split(" or ")[0] in O22_O23[-1]: # Report O22 vs O23 result for O13 serotypes. 12232024
+      if predict_sero.split(" or ")[0] in O22_O23[-1] and predict_sero.split(" or ")[0] not in rename_dict_all:#if in rename_dict_all, then it means already merged, no need to analyze 
+      #if predict_sero.split(" or ")[0] in O22_O23[-1]: # Report O22 vs O23 result for O13 serotypes. 12232024
         O22_score=0
         O23_score=0
         for x in special_gene_list:
@@ -517,18 +517,12 @@ def seqsero_from_formula_to_serotypes(Otype, fliC, fljB, special_gene_list,subsp
               star = "*"
               star_line = "Detected a genetic marker (galE allele) for ancillary O22."
               #star_line = "Detected O22 specific genes to further differenciate '"+predict_sero+"'." #diabled for new output requirement, 04132019
-              if ss == 'ss2' and predict_sero.split(" or ")[0] not in rename_dict_all:
-                predict_sero = z[0]
-              else:
-                pass
+              predict_sero = z[0]
             elif O22_score < O23_score:
               star = "*"
               star_line = "Detected a genetic marker (galE allele) for ancillary O23."
               #star_line = "Detected O23 specific genes to further differenciate '"+predict_sero+"'." #diabled for new output requirement, 04132019
-              if ss == 'ss2' and predict_sero.split(" or ")[0] not in rename_dict_all:
-                predict_sero = z[1]
-              else:
-                pass
+              predict_sero = z[1]
             else:
               star = "*"
               star_line = "Fail to detect genetic markers (galE alleles) for ancillary O22 and O23."
